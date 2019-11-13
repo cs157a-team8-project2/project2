@@ -1,9 +1,13 @@
-# project3
+# project2
 
-We chose to work on project 3, web-based questionnaires for keeping track of the severity of the hearing problem.
+Project 2. Web-based questionnaires for interviewing tinnitus patients.
+Enter and store data from patients’ interview questionnaires: Initial and Follow-up questionnaires (the templates of the paper form are available). 
+- Implement requirements: 1.4, 1.4.1, 3.5, 1.11.3, 3.13.3. 
+Sample tables: Visit, Interview.
 
-We are using oracle sql, php, html, and css. 
+We are using oracle db 11g and java 8. 
 
 Dylan Ceronio
 Albert Levan
 Carl Shefcik
+
