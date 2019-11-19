@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BF085484-3444-58F6-4F9E-D741A4B2B0F2" name="Medical_Data">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-14 23:10:45 UTC</createdTime>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<engineerTo>
+<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="8F9BE5B5-8558-796F-E752-DFCF05B6B91C">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-14 23:28:33 UTC</createdTime>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<engineerTo>
+<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="EEF20874-4E95-1556-7E4B-B5153E5CFB33">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-14 23:28:59 UTC</createdTime>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<engineerTo>
+<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="abbreviation" id="0E39D427-D5AE-C0A9-6ABC-987BAB5DE9B5">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-14 23:29:14 UTC</createdTime>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<engineerTo>
+<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="80DB2848-1E54-3E47-0FA1-91AE1F6287B9">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-14 23:29:47 UTC</createdTime>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<engineerTo>
+<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5083B4B8-1555-B1D0-6ED5-7D8C61498F02" name="Medical_Data PK">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-14 23:28:58 UTC</createdTime>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<engineerTo>
+<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8F9BE5B5-8558-796F-E752-DFCF05B6B91C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

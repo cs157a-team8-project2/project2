@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D87D6C03-B6C7-2D17-1D74-E9A1AA08F5C1" name="REF_Problem">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-14 23:33:58 UTC</createdTime>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<engineerTo>
+<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Problem_ID" id="7CE7AAD2-B63C-9F09-35F0-8BB0BCB4A1A2">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-14 23:39:06 UTC</createdTime>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<engineerTo>
+<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Name" id="46DD4AEB-A0AA-E408-6D0C-C187CF1E865F">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-14 23:39:24 UTC</createdTime>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<engineerTo>
+<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A8362484-70BA-73A1-CE14-FDBD6D886777" name="REF_Problem PK">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-14 23:39:22 UTC</createdTime>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<engineerTo>
+<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7CE7AAD2-B63C-9F09-35F0-8BB0BCB4A1A2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
