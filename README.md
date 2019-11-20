@@ -1,9 +1,16 @@
 # project2
 
-##Project 2. 
-Web-based questionnaires for interviewing tinnitus patients.
-Enter and store data from patients’ interview questionnaires: Initial and Follow-up questionnaires (the templates of the paper form are available). 
-**Implement requirements: **
+## Project 2. 
+* Web-based questionnaires for interviewing tinnitus patients.
+* Enter and store data from patients’ interview questionnaires: Initial and Follow-up questionnaires (the templates of the paper form are available).
+
+* Team Members
+    * Dylan Ceronio
+    * Albert Levan
+    * Carl Shefcik
+
+### Implement requirements:
+
 * 1.4: Interview Screen
     * Upper Panel: inacive fields (auto filled by the system)
         * Visit ID - each visit has a unique id in the system
@@ -61,8 +68,3 @@ Enter and store data from patients’ interview questionnaires: Initial and Foll
 Sample tables: Visit, Interview.
 
 We are using oracle db 11g and Javascript
-
-> Dylan Ceronio
-> Albert Levan
-> Carl Shefcik
-
