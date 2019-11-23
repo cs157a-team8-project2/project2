@@ -1,0 +1,26 @@
+﻿Dylan Ceronio 
+Albert Levan 
+Carl Shefcik
+Technical Documentation
+
+
+Problem Statement: (Analysis of the problem area to be solved)
+For our project, we are attempting to implement a web-based questionnaire for interviewing tinnitus patients for eTRT, a system that supports data transactions at hypothetical clinics specialized in tinnitus retraining therapy for the management of hearing disorders. For each visit, an initial or follow up interview about the patient’s hearing disorder will be conducted and the information will be stored in a database. The database will also track information about the patient and the number of times they have visited a clinic.
+
+
+Database Design: (high-level architecture of system, database design [3NF], UI design) (Proof for 3NF)
+
+
+Technology: Oracle DB 11g, PHP, and javascript.
+
+
+Description of Implementation: (description of tables, attributes, constraints, classes, etc)
+
+
+Instructions: (to deploy and run the website/application)
+
+
+Contributions: (for each team member)
+Dylan Ceronio:
+Albert Levan:
+Carl Shefcik:
