@@ -46,23 +46,9 @@
         * The user performs Lookup Patient
         * The user chooses the Current Visit option
         * Go to step 2
-~~* 1.11.3: Medical Data
-    * Add/Edit 
-        * Hearing problem - code (id)
-        * full name (i.e tinnitus, hyperacusis, hearing loss)
-        * abbreviation (i.e T, H, L)
-        * description~~
-~~* 3.13.3: Add/Edit Medical Data
-    1. The user enters the Main screen
-    1. The user chooseds the option Other
-    1. The system opens the Other screen
-    1. The users chooses option Dictionary data screen
-    1. The system opens the Dictionary data screen
-    1. The user chooses the option Medical data
-    1. The sustem opens the Medical data screen
-    1. The user chooses the data item to add/edit and fills out/modifies the required information about ithe medical item
-    1. the user chooses the Save option
-    1. the user closes the screen~~
+~~1.11.3: Medical Data~~
+~~3.13.3: Add/Edit Medical Data~~
+
 
 
 Sample tables: Visit, Interview.
