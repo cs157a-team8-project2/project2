@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="947EE52A-00B4-135B-44DD-E43AC1835365" containerWithKeyObject="BC9FD606-4DC1-F2EA-02DE-74D57DC63C0E" localFKIndex="2B22E5BE-C638-BFEF-5C21-E1A7DBCCA407" name="Interview_Vist_FK">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:19:57 UTC</createdTime>
+<generatorID>EC328CBA-E088-5DD9-90E6-0124CDA2E0CC</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<referredTableLongName>Vist</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>990941F1-9EC4-9915-FCCD-B7F2D016298A</referredTableID>
+<keyObject>B020E95A-F91D-8CC8-9189-811C59977E59</keyObject>
+<referredKeyID>B020E95A-F91D-8CC8-9189-811C59977E59</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>Visit_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

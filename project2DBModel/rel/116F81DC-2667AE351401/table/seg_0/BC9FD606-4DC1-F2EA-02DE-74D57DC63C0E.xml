@@ -1,776 +1,727 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F26AC605-2920-ED12-54C0-5E7AB7E7EFFE" name="Interview">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BC9FD606-4DC1-F2EA-02DE-74D57DC63C0E" name="Interview">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:07:52 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>F26AC605-2920-ED12-54C0-5E7AB7E7EFFE</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
-<adequatelyNormalized>NO</adequatelyNormalized>
-<expectedVolumes>0</expectedVolumes>
-<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
-<growthPercent>0</growthPercent>
-<growthType>Year</growthType>
-<maxVolumes>9999999</maxVolumes>
-<minVolumes>0</minVolumes>
-<normalForm>Third</normalForm>
-<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Id" id="230D7B1D-984D-CFB7-4638-ABF824B6089C">
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Id" id="63BD2F46-1541-1288-D7DF-312CAF59CEA1">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:45:20 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>230D7B1D-984D-CFB7-4638-ABF824B6089C</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_Area" id="427AAFEB-8996-4835-CD08-5F646CE8BE36">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_Area" id="CA3B71F8-6A06-2C8C-3C70-FEB72CBCA90A">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:48:55 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>427AAFEB-8996-4835-CD08-5F646CE8BE36</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>4</dataTypeSize>
 <ownDataTypeParameters>4,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_Area_Freq" id="F95E920E-3A31-5AD2-1549-5B23B953DADA">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_Area_Freq" id="BB8AE6BD-6C76-9EB3-149C-C044F8B9CDDD">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:51:16 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>F95E920E-3A31-5AD2-1549-5B23B953DADA</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>13</dataTypeSize>
 <ownDataTypeParameters>13,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_Onset" id="A1C38F38-0483-11F6-474D-BBD6169620F7">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_Onset" id="B6C3C358-6F3A-5110-24EE-7F6AC1D097BC">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:51:56 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>A1C38F38-0483-11F6-474D-BBD6169620F7</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>8</dataTypeSize>
 <ownDataTypeParameters>8,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_When" id="69BC1C0C-1617-D3FB-0309-45B0A70C67A4">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_When" id="E24104FA-BFAC-E368-0691-28F48044DD4E">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:52:35 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>69BC1C0C-1617-D3FB-0309-45B0A70C67A4</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_Fluctuations" id="5DBB1C4A-BD3C-82ED-46A7-00DFBD51A706">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_Fluctuations" id="6D96CD02-038F-11A9-D108-53638FA0F10D">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:52:55 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>5DBB1C4A-BD3C-82ED-46A7-00DFBD51A706</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_Desc_of_T_Sound" id="587A0B20-2117-5594-B7EE-061A8CEA2CBD">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_Desc_of_T_Sound" id="AD2EB2C9-8E4B-5D6B-BECD-61494E70CB7C">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:53:50 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>587A0B20-2117-5594-B7EE-061A8CEA2CBD</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_Activities" id="78648897-3A22-0792-5F10-BC6E642FD3A2">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_Activities" id="1CDDD64C-0755-704B-E135-EF84312B2406">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:54:24 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>78648897-3A22-0792-5F10-BC6E642FD3A2</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>15</dataTypeSize>
 <ownDataTypeParameters>15,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_Severity" id="44573A47-3972-8AF5-32B2-03908CC3D00B">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_Severity" id="FA1C0804-C262-31A2-0A8B-51EE64307DB0">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:55:10 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>44573A47-3972-8AF5-32B2-03908CC3D00B</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_Annoyance" id="7CD53A3F-FA6D-53AA-B0A1-61672CB3FB98">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_Annoyance" id="62A9F947-CD58-294A-8FB5-8349E8871BE3">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:55:56 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>7CD53A3F-FA6D-53AA-B0A1-61672CB3FB98</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_EffectOnLife" id="F5418774-501D-089D-0494-2D97EF00280F">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_EffectOnLife" id="C3F5F1BC-9124-BB3A-23D9-34C68FF5573F">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:56:11 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>F5418774-501D-089D-0494-2D97EF00280F</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_Comments" id="500A302C-7E11-4B02-B0BD-155E4D640195">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_Comments" id="7298A7EB-03D3-4971-15AC-8149508F9FAB">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:56:28 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>500A302C-7E11-4B02-B0BD-155E4D640195</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_BD" id="4BF35E28-6DF2-3276-3393-4A1566B75397">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_BD" id="C3312F0E-A3F0-1496-96F5-054EFF7D246D">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:56:46 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>4BF35E28-6DF2-3276-3393-4A1566B75397</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_BD_Freq" id="9460090E-B3F3-AB40-700F-70DB3DF2A508">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_BD_Freq" id="F3C0C709-2FBA-535C-155F-CF674539DD8C">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:58:20 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>9460090E-B3F3-AB40-700F-70DB3DF2A508</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_Eff_Of_Sound" id="68C2B4BF-8904-D103-A8D1-6DED412BCC21">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_Eff_Of_Sound" id="CA89B516-DB58-C68C-1F17-1C30274F0156">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:58:36 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>68C2B4BF-8904-D103-A8D1-6DED412BCC21</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>6</dataTypeSize>
 <ownDataTypeParameters>6,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_EOF_How_Long" id="8776C0FD-9A82-5AD7-FC6B-793531818A05">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_EOF_How_Long" id="86494DFC-70B1-F644-AE1A-8BF1E94D4C92">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:59:15 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>8776C0FD-9A82-5AD7-FC6B-793531818A05</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>5</dataTypeSize>
 <ownDataTypeParameters>5,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_Ear_Over" id="D5D291DC-C0E0-36B8-76A8-DDC15664B007">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_Ear_Over" id="FEFF3931-9F39-A85B-2642-056C5965D3B9">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:59:52 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>D5D291DC-C0E0-36B8-76A8-DDC15664B007</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_Ear_Over_Perc" id="027F2FD1-0428-E7CA-9CAA-27222F987543">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_Ear_Over_Perc" id="ABBF71D7-5BAE-2AD9-6887-8BBDBC8F1AAF">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 00:00:44 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>027F2FD1-0428-E7CA-9CAA-27222F987543</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_Ear_Over_InQuiet" id="889BFCDA-EC86-23A7-CF6E-FFD2482EA92A">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_Ear_Over_InQuiet" id="06FD93E8-49F4-5941-95E3-121E4D1D6D26">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 00:01:04 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>889BFCDA-EC86-23A7-CF6E-FFD2482EA92A</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_Other_T_Treat" id="304E7968-97DB-3F14-7F97-F3C2BD4B6C25">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_Other_T_Treat" id="23BB0F5C-2038-8FE1-5C96-CB76ED565836">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 00:01:40 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>304E7968-97DB-3F14-7F97-F3C2BD4B6C25</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="TIN_Why_T_Prob" id="CE4BAF59-F3D5-6636-9F3E-C1E95557ED9D">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TIN_Why_T_Prob" id="F07AE5F3-84BA-1DD2-C291-77ABD442EBAC">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 00:02:03 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>CE4BAF59-F3D5-6636-9F3E-C1E95557ED9D</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_Oversensitivity" id="FA4E73BC-F2EB-EA57-D535-E90B3408295D">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_Oversensitivity" id="AE260CAA-C93E-2AF7-A8DE-58BE80939C6D">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 00:06:41 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>FA4E73BC-F2EB-EA57-D535-E90B3408295D</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_Phys_Dis" id="1697822C-A3D1-504B-210E-74089ED49B64">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_Phys_Dis" id="B686536F-A5D1-3ECC-7CA4-38B052D2859B">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 00:09:42 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>1697822C-A3D1-504B-210E-74089ED49B64</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_Desc_Of_Troub_Sounds" id="0182D752-0D49-3AD5-4EA9-B7505BF451BF">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_Desc_Of_Troub_Sounds" id="115A17A6-5B83-DDAF-11FE-00DD22FEF777">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 00:10:53 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>0182D752-0D49-3AD5-4EA9-B7505BF451BF</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_Activitiers" id="3916161F-B409-D497-8E0A-E3F3487F800A">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_Activitiers" id="775A1968-7991-5040-31B2-1B80E8A5A10F">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 00:11:27 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>3916161F-B409-D497-8E0A-E3F3487F800A</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>15</dataTypeSize>
 <ownDataTypeParameters>15,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_Severity" id="FF63A6B6-CEBC-F7F6-71E1-4A7BF657A3D8">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_Severity" id="70A07591-AA35-0AF0-AF3B-76F4A56615AF">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:40:17 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>FF63A6B6-CEBC-F7F6-71E1-4A7BF657A3D8</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_Annoyance" id="131C13DF-5CCF-4CBC-A07F-B1D44B119468">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_Annoyance" id="0A7CD5FB-2159-C4E7-3E8F-949E01E8C05C">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:40:56 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>131C13DF-5CCF-4CBC-A07F-B1D44B119468</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_EffectOnLife" id="B9CA9138-314F-B7F6-DBC2-B435ADD084D5">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_EffectOnLife" id="41CA3D91-22AA-3FBE-0DE2-8F22C534D30E">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:41:08 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>B9CA9138-314F-B7F6-DBC2-B435ADD084D5</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_Comments" id="7CBF4964-004D-EB88-5BA6-E6675BC86C5F">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_Comments" id="C5897BE8-462C-6AFC-E283-5DA4DED6E689">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:41:42 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>7CBF4964-004D-EB88-5BA6-E6675BC86C5F</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>50</dataTypeSize>
 <ownDataTypeParameters>50,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_BD" id="5E8F649F-4954-32AE-7B76-26659B9CE512">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_BD" id="283FD47F-6927-4416-ACD5-A884808DBB8E">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:42:42 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>5E8F649F-4954-32AE-7B76-26659B9CE512</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_BD_Freq" id="8CFEFFF2-EEFB-7994-D9BE-3C65491DD229">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_BD_Freq" id="041B10DE-68B3-FCEA-51F5-77059AC6A3A9">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:43:08 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>8CFEFFF2-EEFB-7994-D9BE-3C65491DD229</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_Eff_Of_Sound" id="E826FF7F-83D2-88A3-0B4D-DD5214791071">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_Eff_Of_Sound" id="5ECE13FD-5600-CED0-BC73-AA22221C06BA">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:43:30 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>E826FF7F-83D2-88A3-0B4D-DD5214791071</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>8</dataTypeSize>
 <ownDataTypeParameters>8,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_EOF_How_Long" id="11712974-95CB-96CA-FBDF-1283EDA01647">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_EOF_How_Long" id="3D66EB14-FA99-5613-B22B-9A544F4393C3">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:44:14 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>11712974-95CB-96CA-FBDF-1283EDA01647</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>5</dataTypeSize>
 <ownDataTypeParameters>5,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_Ear_Over" id="57930E3A-ED7B-E063-A537-640C5B403DE4">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_Ear_Over" id="427F58D3-BA83-F2B7-0478-7B1738981A0E">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:45:20 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>57930E3A-ED7B-E063-A537-640C5B403DE4</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_Ear_Over_Perc" id="E8D2E785-1F34-2930-681B-E422F10BD3B5">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_Ear_Over_Perc" id="328F6437-6225-125D-F685-5E5866F828B0">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:46:02 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>E8D2E785-1F34-2930-681B-E422F10BD3B5</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_Ear_Over_InQuiet" id="1E46CC9B-73DC-D3E8-4682-A52EE42F693C">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_Ear_Over_InQuiet" id="3F72C131-0163-EE5C-C9DD-1F6005F2A6A0">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:47:07 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>1E46CC9B-73DC-D3E8-4682-A52EE42F693C</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_Other_ST_Treat" id="4F6BA0EA-0E0D-86AC-6965-79698061D8F2">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_Other_ST_Treat" id="6AD061EE-18AD-14D5-F6B6-A26D685F5990">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:47:46 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>4F6BA0EA-0E0D-86AC-6965-79698061D8F2</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="ST_Why_ST_Prob" id="C3347123-B9C0-8984-A1CF-7C03D8F1AEF4">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_Why_ST_Prob" id="32C879A6-D4EC-3817-C3B4-2FD381DF14A0">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:49:14 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>C3347123-B9C0-8984-A1CF-7C03D8F1AEF4</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="HL_Hearing_Prob" id="B7E370F7-1A2D-2B61-B10D-34800B0B6CD3">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HL_Hearing_Prob" id="E0374A3B-D55A-8E14-63F8-EDC76C3ACE10">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:49:37 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>B7E370F7-1A2D-2B61-B10D-34800B0B6CD3</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="HL_Hearing_Aid" id="343B1BC2-BB1C-B956-2D5A-F722A7213091">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HL_Hearing_Aid" id="CC7FB053-E3E9-2A44-5C78-7A52F0C1F471">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:49:59 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>343B1BC2-BB1C-B956-2D5A-F722A7213091</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="HL_Ever_Rec" id="4AE319C2-BA6A-972C-FC45-697EB12E1678">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HL_Ever_Rec" id="AD0C98B6-CF9A-DBE3-8D0C-6C9D6FE85542">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:50:16 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>4AE319C2-BA6A-972C-FC45-697EB12E1678</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="HL_Category" id="BAA1D800-6B9B-A93F-585D-4461002AFFDD">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HL_Category" id="35B83B15-2894-3F94-C4B0-AF84B1D4EB6F">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:50:36 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>BAA1D800-6B9B-A93F-585D-4461002AFFDD</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="HL_Rec" id="5B0D488A-4645-B496-B7D2-36925ECF9CDE">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HL_Rec" id="07064B20-C8D5-DD4F-9A8F-9D95A28CFC02">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:51:01 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>5B0D488A-4645-B496-B7D2-36925ECF9CDE</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Rank_Tin" id="88D4D2A9-8464-ECCC-4515-8A9DA396255E">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rank_Tin" id="A0EF5694-6850-A2C3-8DB8-4065D85B20F0">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:51:15 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>88D4D2A9-8464-ECCC-4515-8A9DA396255E</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Rank_ST" id="5C97E25C-A0B6-2E26-D131-76F94CAEFA85">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rank_ST" id="D6F3170C-9088-E6C1-AB36-898D19318287">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:51:35 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>5C97E25C-A0B6-2E26-D131-76F94CAEFA85</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Rank_Hearing" id="DFB34236-7F28-CF1B-15F9-8F27B56DD57F">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Rank_Hearing" id="86584B67-A940-A505-9008-3C88EDF2CA47">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:51:49 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>DFB34236-7F28-CF1B-15F9-8F27B56DD57F</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Ptn_Decision" id="65A5D2C3-331B-B35A-29F4-0AD49849CBEA">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Ptn_Decision" id="CC9A6212-FBC2-3D2C-76BD-7F1E3C057623">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:52:06 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>65A5D2C3-331B-B35A-29F4-0AD49849CBEA</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Next_Visit" id="433F5BEE-EFAB-1745-50D9-9D592B8FECE6">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Next_Visit" id="3BE30AC7-6E75-2F03-29D4-AF34DA0BDD69">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:52:29 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>433F5BEE-EFAB-1745-50D9-9D592B8FECE6</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>20</dataTypeSize>
 <ownDataTypeParameters>20,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="FUI_Activities_Changes" id="F26011D5-C350-0B0E-AA25-AADCA1F2F8F1">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FUI_Activities_Changes" id="7CC43352-DAE8-C51F-68BB-1B4AB0CFE1D5">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:53:20 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>F26011D5-C350-0B0E-AA25-AADCA1F2F8F1</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="FUI_Activities_Changes_1" id="A88BC965-2AA7-D00E-AC56-7E551357CAC9">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FUI_Activities_Changes_1" id="DE274D45-82FD-F7F4-22C9-0F6FA383E0D3">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:53:56 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>A88BC965-2AA7-D00E-AC56-7E551357CAC9</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>1</dataTypeSize>
 <ownDataTypeParameters>1,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="FUI_Problem_In_General" id="4754B879-F7F8-522E-8532-B8E0A2B5041C">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FUI_Problem_In_General" id="339F0490-D1FF-179E-DB73-2A347AE28E33">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:55:46 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>4754B879-F7F8-522E-8532-B8E0A2B5041C</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>6</dataTypeSize>
 <ownDataTypeParameters>6,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="FUI_Glad_Started" id="E651ECF3-56C8-9E1F-DB08-891DF1D8AB1B">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FUI_Glad_Started" id="D314083C-2E6F-0B9E-BE63-EB85BE8FC241">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:56:54 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>E651ECF3-56C8-9E1F-DB08-891DF1D8AB1B</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>2</dataTypeSize>
 <ownDataTypeParameters>2,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="FUI_Main_Prob_Disc" id="CA07A3E4-F0B8-E9E3-5DA1-178E229AC5C0">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FUI_Main_Prob_Disc" id="E5305F06-1CD3-4EB7-8B14-B0A6E185DF92">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-15 01:57:50 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>CA07A3E4-F0B8-E9E3-5DA1-178E229AC5C0</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
 <nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <dataTypeSize>100</dataTypeSize>
 <ownDataTypeParameters>100,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="Visit_ID" id="22856AA4-26AB-E284-385E-D9A292068FA8">
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Vist_Visit_ID" id="06F14FCB-CD6B-6998-8A9B-3AB172BA6D22">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-19 02:47:44 UTC</createdTime>
-<generatorID>EC328CBA-E088-5DD9-90E6-0124CDA2E0CC</generatorID>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>22856AA4-26AB-E284-385E-D9A292068FA8</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
-<referedAttribute>35C746BF-0372-CF66-4EEC-6E2450165241</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-</attributes>
-<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="EB755EA1-B397-43C9-62C9-C6CEB61C5898" name="Interview PK">
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="947EE52A-00B4-135B-44DD-E43AC1835365" referredColumn="0D27E28D-5C7D-DC28-95D8-895773DD0DD4"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F4175F78-570B-B26D-1205-622234F48FAF" name="Interview_PK">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-14 23:48:54 UTC</createdTime>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>EB755EA1-B397-43C9-62C9-C6CEB61C5898</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
-<shouldEngineer>false</shouldEngineer>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="false"/>
-</engineerTo>
 <pk>true</pk>
-<usedAttributes>
-<attributeRef>230D7B1D-984D-CFB7-4638-ABF824B6089C</attributeRef>
-</usedAttributes>
-</identifier>
-</identifiers>
-</Entity>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63BD2F46-1541-1288-D7DF-312CAF59CEA1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2B22E5BE-C638-BFEF-5C21-E1A7DBCCA407" name="Interview_Vist_FK">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:19:57 UTC</createdTime>
+<generatorID>EC328CBA-E088-5DD9-90E6-0124CDA2E0CC</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="06F14FCB-CD6B-6998-8A9B-3AB172BA6D22"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
