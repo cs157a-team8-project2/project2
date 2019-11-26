@@ -13,6 +13,10 @@ export default class TinnitusForm extends Component {
         this.props.nextStep();
     }
 
+    handleRadio = event => {
+        // setValue(event.target.value);
+    }
+
     render() {
         const { values, handleChange } = this.props;
 
@@ -23,8 +27,8 @@ export default class TinnitusForm extends Component {
                     <Grid item>
                         <TextField 
                             label="T Frequency"
-                            onChange={handleChange('t_freq')}
-                            defaultValue={values.t_freq}
+                            onChange={handleChange('tin_area_freq')}
+                            defaultValue={values.tin_area_freq}
                         />
                     </Grid>
                 </Grid>

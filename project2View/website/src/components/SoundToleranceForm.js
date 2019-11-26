@@ -28,8 +28,8 @@ export default class SoundToleranceForm extends Component {
                     <Grid item>
                         <TextField 
                             label="ST Frequency"
-                            onChange={handleChange('st_freq')}
-                            defaultValue={values.st_freq}
+                            onChange={handleChange('st_bd_freq')}
+                            defaultValue={values.st_bd_freq}
                         />
                     </Grid>
 
