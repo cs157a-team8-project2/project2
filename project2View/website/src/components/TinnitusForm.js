@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import { TextField, RaisedButton } from 'material-ui';
+import { Grid, TextField, Button } from '@material-ui/core';
 
 const styles = {
     button: {
@@ -8,40 +7,43 @@ const styles = {
     }
 }
 export default class TinnitusForm extends Component {
-
+    
     continue = e => {
         e.preventDefault();
         this.props.nextStep();
+    }
+
+    handleRadio = event => {
+        // setValue(event.target.value);
     }
 
     render() {
         const { values, handleChange } = this.props;
 
         return (
-            <MuiThemeProvider>
-                <React.Fragment>
-                    <TextField 
-                        hintText="Enter first name"
-                        floatingLabelText="First Name"
-                        onChange={handleChange('firstName')}
-                        defualtValue={values.firstName}
-                    />
-                    <br/>
-                    <TextField 
-                        hintText="Enter last name"
-                        floatingLabelText="Last Name"
-                        onChange={handleChange('lastName')}
-                        defualtValue={values.lastName}
-                    />
-                    <br/>
-                    <RaisedButton 
-                        label="Continue"
-                        primary={true}
-                        styles={styles.button}
-                        onClick={this.continue}
-                    />
-                </React.Fragment>
-            </MuiThemeProvider>
+            <React.Fragment>
+                <h3>Tinnitus</h3>
+                <Grid container spacing={3}>
+                    <Grid item>
+                        <TextField 
+                            label="T Frequency"
+                            onChange={handleChange('tin_area_freq')}
+                            defaultValue={values.tin_area_freq}
+                        />
+                    </Grid>
+                </Grid>
+                <br/>
+                <Grid container direction="row" justify="flex-end" alignItems="center">
+                    <Grid item>
+                        <Button
+                            variant="contained"
+                            color="primary"
+                            styles={styles.button}
+                            onClick={this.continue}
+                        >Continue</Button>
+                    </Grid>
+                </Grid>
+            </React.Fragment>
         )
     }
 }

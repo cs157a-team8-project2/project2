@@ -22,7 +22,7 @@ export function CenteredGrid() {
                 </Grid>
                 <Grid item xs>
                     <div style={styles.button}>
-                        <Link to="/Visits"><Button variant="contained"><h2>Visits</h2></Button></Link>
+                        <Link to="/Visits"><Button variant="contained" color="primary"><h2>Visits</h2></Button></Link>
                     </div>
                 </Grid>
                 <Grid item xs>
