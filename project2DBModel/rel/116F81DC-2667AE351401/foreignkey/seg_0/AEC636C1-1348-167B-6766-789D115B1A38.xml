@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F5AFB5CC-D0BD-985D-0433-971E630B1402" containerWithKeyObject="990941F1-9EC4-9915-FCCD-B7F2D016298A" localFKIndex="65EB3F24-4672-0FEF-06ED-B4A000159223" name="Vist_Interview_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="AEC636C1-1348-167B-6766-789D115B1A38" containerWithKeyObject="990941F1-9EC4-9915-FCCD-B7F2D016298A" localFKIndex="5BFEC07D-BD3F-E313-B95A-E39E2B9F3183" name="Visit_Interview_FK">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-25 23:19:57 UTC</createdTime>
+<createdTime>2019-11-26 08:28:27 UTC</createdTime>
 <generatorID>EC328CBA-E088-5DD9-90E6-0124CDA2E0CC</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
 <referredTableLongName>Interview</referredTableLongName>
