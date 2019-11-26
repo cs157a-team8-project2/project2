@@ -79,7 +79,7 @@ function Visits() {
       <h2>Visits</h2>
       <Grid container direction="row" justify="center" alignItems="center" spacing={3}>
         <Grid item xs>
-          <Link to="/AddNewVisit"><Button variant="contained"><h2>Add New Visit</h2></Button></Link>
+          <Link to="/AddNewVisit"><Button variant="contained" color="primary"><h2>Add New Visit</h2></Button></Link>
         </Grid>
         <Grid item xs>
           <Button variant="contained" disabled><h2>View / Edit Visits</h2></Button>
@@ -94,7 +94,7 @@ function AddNewVisit() {
       <h2>Visit</h2>
       <Grid container direction="row" justify="center" alignItems="center" spacing={3}>
         <Grid item xs>
-          <Link to="/AddInterview"><Button variant="contained"><h2>Add New Interview</h2></Button></Link>
+          <Link to="/AddInterview"><Button variant="contained" color="primary"><h2>Add New Interview</h2></Button></Link>
         </Grid>
       </Grid>
     </div>
