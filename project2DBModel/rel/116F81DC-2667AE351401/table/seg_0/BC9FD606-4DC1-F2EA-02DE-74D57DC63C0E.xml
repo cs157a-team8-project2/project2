@@ -686,7 +686,7 @@
 </Column>
 <Column name="Visit_Visit_ID" id="06F14FCB-CD6B-6998-8A9B-3AB172BA6D22">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<createdTime>2019-11-26 23:30:18 UTC</createdTime>
 <generatorID>22856AA4-26AB-E284-385E-D9A292068FA8</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -695,9 +695,6 @@
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="37D1FC4B-D788-B315-CBD8-FD7F3B5338FF" referredColumn="0D27E28D-5C7D-DC28-95D8-895773DD0DD4"/>
-</associations>
 </Column>
 <Column name="TIN_Activities_Sleep" id="66710C72-23E2-1A4A-5BE5-B1B421C5718F">
 <createdBy>Dylan</createdBy>
@@ -958,17 +955,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="63BD2F46-1541-1288-D7DF-312CAF59CEA1"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="C35A0F7B-DFA8-1FED-D957-F00877BF68C8" name="Interview_Visit_FK">
-<createdBy>Dylan</createdBy>
-<createdTime>2019-11-26 08:28:27 UTC</createdTime>
-<generatorID>EC328CBA-E088-5DD9-90E6-0124CDA2E0CC</generatorID>
-<ownerDesignName>project2DBModel</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="06F14FCB-CD6B-6998-8A9B-3AB172BA6D22"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

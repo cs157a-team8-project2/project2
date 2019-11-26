@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Visit_ID" id="35C746BF-0372-CF66-4EEC-6E2450165241">
+<Attribute name="Visit ID" id="35C746BF-0372-CF66-4EEC-6E2450165241">
 <createdBy>Dylan</createdBy>
 <createdTime>2019-11-14 23:25:38 UTC</createdTime>
 <ownerDesignName>project2DBModel</ownerDesignName>
@@ -27,7 +27,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Visit_Number" id="E6D1341A-FE7B-3FE0-1748-059703452BDB">
+<Attribute name="Visit Number" id="E6D1341A-FE7B-3FE0-1748-059703452BDB">
 <createdBy>Dylan</createdBy>
 <createdTime>2019-11-14 23:25:58 UTC</createdTime>
 <ownerDesignName>project2DBModel</ownerDesignName>
@@ -51,7 +51,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="THC" id="6DED4059-F633-A52E-95CD-E311E1F5FE7B">
+<Attribute name="Patient THC" id="6DED4059-F633-A52E-95CD-E311E1F5FE7B">
 <createdBy>Dylan</createdBy>
 <createdTime>2019-11-15 02:11:48 UTC</createdTime>
 <generatorID>F2F28BB2-1083-5D71-23B4-FE73C6D3B4AB</generatorID>
@@ -66,7 +66,7 @@
 <dataTypeSize>9</dataTypeSize>
 <ownDataTypeParameters>9,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Clinic_Number" id="6675E812-A0F8-5659-2A4A-535735697E7F">
+<Attribute name="Clinic Clinic Number" id="6675E812-A0F8-5659-2A4A-535735697E7F">
 <createdBy>Dylan</createdBy>
 <createdTime>2019-11-19 02:37:20 UTC</createdTime>
 <generatorID>E7B4406B-F537-F30D-937B-2B7D710349CF</generatorID>
@@ -80,7 +80,7 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Id" id="2FF48EDE-7B9A-7C32-9E37-F140431DB967">
+<Attribute name="Interview Id" id="2FF48EDE-7B9A-7C32-9E37-F140431DB967">
 <createdBy>Dylan</createdBy>
 <createdTime>2019-11-19 02:40:17 UTC</createdTime>
 <generatorID>EC328CBA-E088-5DD9-90E6-0124CDA2E0CC</generatorID>
@@ -96,7 +96,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="914F29BC-243B-A092-3330-A8462731E798" name="Vist PK">
+<identifier id="914F29BC-243B-A092-3330-A8462731E798" name="Visit_PK">
 <createdBy>Dylan</createdBy>
 <createdTime>2019-11-15 02:11:48 UTC</createdTime>
 <ownerDesignName>project2DBModel</ownerDesignName>

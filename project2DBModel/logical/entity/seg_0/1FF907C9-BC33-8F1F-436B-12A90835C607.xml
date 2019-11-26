@@ -38,8 +38,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<dataTypeSize>11</dataTypeSize>
+<ownDataTypeParameters>11,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="DOB" id="1686C3BD-13AE-FC3D-DC70-A7952CB9B0A2">
 <createdBy>Dylan</createdBy>
@@ -53,7 +53,7 @@
 <logicalDatatype>LOGDT007</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="First_Name" id="69CB4712-B6A9-D19D-BDC2-CEB926BD3B69">
+<Attribute name="First Name" id="69CB4712-B6A9-D19D-BDC2-CEB926BD3B69">
 <createdBy>Dylan</createdBy>
 <createdTime>2019-11-14 23:21:07 UTC</createdTime>
 <ownerDesignName>project2DBModel</ownerDesignName>
@@ -66,7 +66,7 @@
 <dataTypeSize>10</dataTypeSize>
 <ownDataTypeParameters>10,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Last_Name" id="F9CD22F4-B90B-BC6E-A5E5-E658CEE85CA9">
+<Attribute name="Last Name" id="F9CD22F4-B90B-BC6E-A5E5-E658CEE85CA9">
 <createdBy>Dylan</createdBy>
 <createdTime>2019-11-14 23:21:24 UTC</createdTime>
 <ownerDesignName>project2DBModel</ownerDesignName>
@@ -89,8 +89,8 @@
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>10</dataTypeSize>
-<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="Email" id="4495964F-766E-F7AA-FBDD-CD2343A6008C">
 <createdBy>Dylan</createdBy>

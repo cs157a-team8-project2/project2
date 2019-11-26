@@ -15,7 +15,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="Clinic_Number" id="C4C9712A-1F7A-FBA8-CAE0-5898919CD5F8">
+<Attribute name="Clinic Number" id="C4C9712A-1F7A-FBA8-CAE0-5898919CD5F8">
 <createdBy>Dylan</createdBy>
 <createdTime>2019-11-14 23:42:30 UTC</createdTime>
 <ownerDesignName>project2DBModel</ownerDesignName>
