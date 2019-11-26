@@ -100,8 +100,9 @@
 <createdBy>Dylan</createdBy>
 <createdTime>2019-11-15 02:11:48 UTC</createdTime>
 <ownerDesignName>project2DBModel</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
+<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

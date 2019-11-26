@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A5745386-BED1-F38D-BD43-3EEC9B29B60D" name="Patient">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>1FF907C9-BC33-8F1F-436B-12A90835C607</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="THC" id="7FA0E12D-2BE1-3F19-1C8C-E6AF1934A0F5">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>AD28C62E-7FA5-E482-AA14-A32B4ECC4B1D</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>9,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SSN" id="CE182507-7DFA-027C-702F-E7371865B5AD">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>7E79B38D-DBBC-D77C-756B-2A463D8027C5</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DOB" id="440B71C5-9B6F-643C-01DA-F1F41C8CC748">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>1686C3BD-13AE-FC3D-DC70-A7952CB9B0A2</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="First_Name" id="74236380-0C31-47FF-8AD3-E12A487E9466">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>69CB4712-B6A9-D19D-BDC2-CEB926BD3B69</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Last_Name" id="32025C38-8640-837B-3C92-E2DAB6AB3656">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>F9CD22F4-B90B-BC6E-A5E5-E658CEE85CA9</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Phone" id="90C00EC7-787A-6BE8-0E0D-D5FBB8AB18B4">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>163BB106-AAA1-F02B-DDA9-DCD78FB7CDE7</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="1D8A11B6-F28B-76EF-D1E5-47691B7E73BC">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>4495964F-766E-F7AA-FBDD-CD2343A6008C</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Insurance" id="EED519E0-DA30-24FB-63DA-12E12A258519">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>47487F10-B77A-FD54-8ED2-A7D23008FFAD</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8498F4D2-6ED8-34D3-9BB7-240EA3757132" name="Patient_PK">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>9BA652C2-A89D-93F1-29D3-F6FE10C24672</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7FA0E12D-2BE1-3F19-1C8C-E6AF1934A0F5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

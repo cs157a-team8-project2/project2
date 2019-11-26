@@ -1,0 +1,138 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="990941F1-9EC4-9915-FCCD-B7F2D016298A" name="Vist">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>87DED680-529B-4E0B-1BEE-F4E005C21303</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Visit_ID" id="0D27E28D-5C7D-DC28-95D8-895773DD0DD4">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>35C746BF-0372-CF66-4EEC-6E2450165241</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Visit_Number" id="0030A859-3ED7-979D-7683-15E46F8998FF">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>E6D1341A-FE7B-3FE0-1748-059703452BDB</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT018</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Date" id="55AAB357-19A7-3B12-E928-EB8E49FC8C7E">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>BEDD9C71-4A23-0941-FE16-1E229700119B</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Patient_THC" id="D51B6D7D-D25B-84AD-3406-05F037C78983">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>6DED4059-F633-A52E-95CD-E311E1F5FE7B</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>9</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="85CCB6A9-B8F0-8BD8-2419-0460333066AA" referredColumn="7FA0E12D-2BE1-3F19-1C8C-E6AF1934A0F5"/>
+</associations>
+</Column>
+<Column name="Clinic_Clinic_Number" id="C2B34271-EF99-25D1-D058-737552B7471A">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>6675E812-A0F8-5659-2A4A-535735697E7F</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A0CBAA5B-06C5-A55C-A8A7-9D967B5180B7" referredColumn="914842B6-AE69-DCDA-9B10-E33823A04E38"/>
+</associations>
+</Column>
+<Column name="Interview_Id" id="4B9BEAD4-D2B4-6EC6-9A93-EF3F64D0080F">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>2FF48EDE-7B9A-7C32-9E37-F140431DB967</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F5AFB5CC-D0BD-985D-0433-971E630B1402" referredColumn="63BD2F46-1541-1288-D7DF-312CAF59CEA1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B020E95A-F91D-8CC8-9189-811C59977E59" name="Vist_PK">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>914F29BC-243B-A092-3330-A8462731E798</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0D27E28D-5C7D-DC28-95D8-895773DD0DD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FFEBFCB3-AFC3-CE07-9F0C-3DED4304E521" name="Vist_Patient_FK">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>F2F28BB2-1083-5D71-23B4-FE73C6D3B4AB</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D51B6D7D-D25B-84AD-3406-05F037C78983"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AD3541E0-C630-A806-98C5-AC5CC0C00F1B" name="Vist_Clinic_FK">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:07:08 UTC</createdTime>
+<generatorID>E7B4406B-F537-F30D-937B-2B7D710349CF</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C2B34271-EF99-25D1-D058-737552B7471A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65EB3F24-4672-0FEF-06ED-B4A000159223" name="Vist_Interview_FK">
+<createdBy>Dylan</createdBy>
+<createdTime>2019-11-25 23:19:57 UTC</createdTime>
+<generatorID>EC328CBA-E088-5DD9-90E6-0124CDA2E0CC</generatorID>
+<ownerDesignName>project2DBModel</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4B9BEAD4-D2B4-6EC6-9A93-EF3F64D0080F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
