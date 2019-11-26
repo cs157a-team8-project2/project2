@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="990941F1-9EC4-9915-FCCD-B7F2D016298A" name="Vist">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="990941F1-9EC4-9915-FCCD-B7F2D016298A" name="Visit">
 <createdBy>Dylan</createdBy>
 <createdTime>2019-11-25 23:07:08 UTC</createdTime>
 <generatorID>87DED680-529B-4E0B-1BEE-F4E005C21303</generatorID>
@@ -84,12 +84,12 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="F5AFB5CC-D0BD-985D-0433-971E630B1402" referredColumn="63BD2F46-1541-1288-D7DF-312CAF59CEA1"/>
+<colAssociation fkAssociation="AEC636C1-1348-167B-6766-789D115B1A38" referredColumn="63BD2F46-1541-1288-D7DF-312CAF59CEA1"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="B020E95A-F91D-8CC8-9189-811C59977E59" name="Vist_PK">
+<ind_PK_UK id="B020E95A-F91D-8CC8-9189-811C59977E59" name="Visit_PK">
 <createdBy>Dylan</createdBy>
 <createdTime>2019-11-25 23:07:08 UTC</createdTime>
 <generatorID>914F29BC-243B-A092-3330-A8462731E798</generatorID>
@@ -101,7 +101,7 @@
 <colUsage columnID="0D27E28D-5C7D-DC28-95D8-895773DD0DD4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="FFEBFCB3-AFC3-CE07-9F0C-3DED4304E521" name="Vist_Patient_FK">
+<ind_PK_UK id="FFEBFCB3-AFC3-CE07-9F0C-3DED4304E521" name="Visit_Patient_FK">
 <createdBy>Dylan</createdBy>
 <createdTime>2019-11-25 23:07:08 UTC</createdTime>
 <generatorID>F2F28BB2-1083-5D71-23B4-FE73C6D3B4AB</generatorID>
@@ -112,7 +112,7 @@
 <colUsage columnID="D51B6D7D-D25B-84AD-3406-05F037C78983"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="AD3541E0-C630-A806-98C5-AC5CC0C00F1B" name="Vist_Clinic_FK">
+<ind_PK_UK id="AD3541E0-C630-A806-98C5-AC5CC0C00F1B" name="Visit_Clinic_FK">
 <createdBy>Dylan</createdBy>
 <createdTime>2019-11-25 23:07:08 UTC</createdTime>
 <generatorID>E7B4406B-F537-F30D-937B-2B7D710349CF</generatorID>
@@ -123,9 +123,9 @@
 <colUsage columnID="C2B34271-EF99-25D1-D058-737552B7471A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="65EB3F24-4672-0FEF-06ED-B4A000159223" name="Vist_Interview_FK">
+<ind_PK_UK id="5BFEC07D-BD3F-E313-B95A-E39E2B9F3183" name="Visit_Interview_FK">
 <createdBy>Dylan</createdBy>
-<createdTime>2019-11-25 23:19:57 UTC</createdTime>
+<createdTime>2019-11-26 08:28:27 UTC</createdTime>
 <generatorID>EC328CBA-E088-5DD9-90E6-0124CDA2E0CC</generatorID>
 <ownerDesignName>project2DBModel</ownerDesignName>
 <indexState>Foreign Key</indexState>
