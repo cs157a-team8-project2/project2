@@ -2,6 +2,8 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { AppBar, FlatButton } from 'material-ui';
+import Button from '@material-ui/core/Button';
+import Grid from '@material-ui/core/Grid';
 import UserForm from './components/UserForm';
 import './App.css';
 import Main from './components/Main';
@@ -33,7 +35,7 @@ function App() {
             <div style={styles.button}>
               <Link to="/"><FlatButton><div style={styles.white}>Home</div></FlatButton></Link>
             </div>
-            <div style={styles.button}>
+            {/* <div style={styles.button}>
               <Link to="/Patients"><FlatButton><div style={styles.white}>Patients</div></FlatButton></Link>
             </div>
             <div style={styles.button}>
@@ -44,24 +46,21 @@ function App() {
             </div>
             <div style={styles.button}>
               <Link to="/Other"><FlatButton><div style={styles.white}>Other</div></FlatButton></Link>
-            </div>
+            </div> */}
           </AppBar>
 
           {/* A <Switch> looks through its children <Route>s and
               renders the first one that matches the current URL. */}
           <div style={styles.center}>
             <Switch>
-              <Route path="/Patients">
-                <Patients />
-              </Route>
               <Route path="/Visits">
                 <Visits />
               </Route>
-              <Route path="/Analytics">
-                <Analytics />
+              <Route path="/AddNewVisit">
+                <AddNewVisit />
               </Route>
-              <Route path="/Other">
-                <Other />
+              <Route path="/AddInterview">
+                <AddInterview />
               </Route>
               <Route path="/">
                 <Home />
@@ -74,21 +73,40 @@ function App() {
   );
 }
 
-function Patients() {
-  return <h2>Patients</h2>;
-}
-
 function Visits() {
-  return <h2>Visits</h2>;
+  return ( 
+    <div>
+      <h2>Visits</h2>
+      <Grid container direction="row" justify="center" alignItems="center" spacing={3}>
+        <Grid item xs>
+          <Link to="/AddNewVisit"><Button variant="contained"><h2>Add New Visit</h2></Button></Link>
+        </Grid>
+        <Grid item xs>
+          <Button variant="contained" disabled><h2>View / Edit Visits</h2></Button>
+        </Grid>
+      </Grid>
+    </div>
+  );
+}
+function AddNewVisit() {
+  return ( 
+    <div>
+      <h2>Visit</h2>
+      <Grid container direction="row" justify="center" alignItems="center" spacing={3}>
+        <Grid item xs>
+          <Link to="/AddInterview"><Button variant="contained"><h2>Add New Interview</h2></Button></Link>
+        </Grid>
+      </Grid>
+    </div>
+  );
 }
 
-function Analytics() {
-  return <h2>Analytics</h2>;
-}
-
-function Other() {
+function AddInterview() {
   return (
-    <UserForm />
+    <div>
+      <h2>Interview</h2>
+      <UserForm />
+    </div>
   );
 }
 
