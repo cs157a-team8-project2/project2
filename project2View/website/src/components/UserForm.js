@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import TinnitusForm from './TinnitusForm';
 import SoundToleranceForm from './SoundToleranceForm';
 import HLForm from './HLForm';
+import RankingForm from './RankingForm';
 import { Button, Grid, TextField } from '@material-ui/core';
 
 
@@ -127,10 +128,21 @@ export class UserForm extends Component {
         this.setState({ [input]: e.target.value})
     }
 
+    handleChecked = name => event => {
+        this.setState({ [name]: event.target.checked });
+    }
+
     formSubmission = (e) => {
         e.preventDefault()
         //this will submit the data for the php server in the form of the "this.state" json and will be parsed by the php
         console.log(this.state)
+        // if it completes the query
+            // this.nextStep()
+        // else // go to error screen
+            // const { step } = this.state;
+            // this.setState({
+            //     step: step + 2
+            // });
     }
 
     render() {
@@ -294,6 +306,7 @@ export class UserForm extends Component {
             rank_hearing              ,
             ptn_decision               ,
             next_visit                 ,
+
             fui_tin_activities_changes ,
             fui_st_activities_changes  ,
             fui_problem_in_general     ,
@@ -356,11 +369,12 @@ export class UserForm extends Component {
         const toVisit = (
             <div>
                 <br/>
-                    <Grid container direction="row" justify="flex-end" alignItems="center">
-                        <Grid item>
-                            <Link to="/AddNewVisit"><Button>{"<- Back to Visit"}</Button></Link>
-                        </Grid>
+                <Grid container direction="row" justify="flex-end" alignItems="center">
+                    <Grid item>
+                        <Link to="/AddNewVisit"><Button>{"<- Back to Visit"}</Button></Link>
                     </Grid>
+                </Grid>
+                <br/><br/><br/>
             </div>
         )
         
@@ -400,6 +414,7 @@ export class UserForm extends Component {
                         <TinnitusForm
                             nextStep = {this.nextStep}
                             handleChange = {this.handleChange}
+                            handleChecked = {this.handleChecked}
                             values = {values}
                         />
                         {toVisit}
@@ -413,6 +428,8 @@ export class UserForm extends Component {
                             nextStep = {this.nextStep}
                             prevStep = {this.prevStep}
                             handleChange = {this.handleChange}
+                            handleChecked = {this.handleChecked}
+                            formSubmission = {this.formSubmission}
                             values = {values}
                         />
                         {toVisit}
@@ -426,6 +443,7 @@ export class UserForm extends Component {
                             nextStep = {this.nextStep}
                             prevStep = {this.prevStep}
                             handleChange = {this.handleChange}
+                            handleChecked = {this.handleChecked}
                             values = {values}
                         />
                         {toVisit}
@@ -435,7 +453,13 @@ export class UserForm extends Component {
                 return (
                     <div>
                         {topInfo}
-                        <h1>Final questions</h1>
+                        <RankingForm
+                            nextStep = {this.nextStep}
+                            prevStep = {this.prevStep}
+                            handleChange = {this.handleChange}
+                            handleChecked = {this.handleChecked}
+                            values = {values}
+                        />
                         {toVisit}
                     </div>
                 )
@@ -443,12 +467,18 @@ export class UserForm extends Component {
                 return (
                     <div>
                         {topInfo}
-                        <h1>Success</h1>
+                        <h2>Form Submitted Successfully</h2>
                         {toVisit}
                     </div>
                 )
             default:
-                return <h1>Err</h1>
+                return (
+                    <div>
+                        {topInfo}
+                        <h2>Err</h2>
+                        {toVisit}
+                    </div>
+                )
         }
         
     }
