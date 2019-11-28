@@ -4,7 +4,9 @@ import TinnitusForm from './TinnitusForm';
 import SoundToleranceForm from './SoundToleranceForm';
 import HLForm from './HLForm';
 import { Button, Grid, TextField } from '@material-ui/core';
+import axios from 'axios';
 
+const API_PATH = 'http://localhost/api/contact/oracle.php';
 
 export class UserForm extends Component {
     state = {
@@ -131,6 +133,13 @@ export class UserForm extends Component {
         e.preventDefault()
         //this will submit the data for the php server in the form of the "this.state" json and will be parsed by the php
         console.log(this.state)
+		axios({
+		method: 'post',
+		url: `${API_PATH}`,
+		headers: { 'content-type': 'application/json' },
+		data: this.state
+		})
+		
     }
 
     render() {
@@ -435,8 +444,17 @@ export class UserForm extends Component {
                 return (
                     <div>
                         {topInfo}
-                        <h1>Final questions</h1>
+                        <h1>Success!</h1>
                         {toVisit}
+						<Grid container spacing={3}>
+                            <Grid item xs={4}>
+                                <Button
+                                    variant="contained"
+                                    color="primary"
+                                    onClick={this.formSubmission}
+                                >Submit</Button>
+                            </Grid>
+						</Grid>
                     </div>
                 )
             case 5:
