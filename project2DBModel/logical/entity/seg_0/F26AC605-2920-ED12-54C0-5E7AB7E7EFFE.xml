@@ -1024,19 +1024,6 @@
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="Visit Visit ID" id="2AA39837-AC6A-2B9C-F555-E0C894BA3085">
-<createdBy>Dylan</createdBy>
-<createdTime>2019-11-26 23:46:54 UTC</createdTime>
-<generatorID>06F14FCB-CD6B-6998-8A9B-3AB172BA6D22</generatorID>
-<ownerDesignName>project2DBModel</ownerDesignName>
-<engineerTo>
-<item key="116F81DC-2A2B-965B-BEC5-2667AE351401" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
 <identifier id="EB755EA1-B397-43C9-62C9-C6CEB61C5898" name="Interview PK">
