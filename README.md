@@ -9,6 +9,10 @@
     * Albert Levan
     * Carl Shefcik
 
+### Running Front End:
+* The frontend was built with React using Node.js
+* Documentation for the frontend is inside project2View/website and can be built using a cli
+
 ### Implement requirements:
 
 * 1.4: Interview Screen

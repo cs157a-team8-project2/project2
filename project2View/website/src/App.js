@@ -33,7 +33,7 @@ function App() {
         <div>
           <AppBar style={styles.appbar} title="eTRT" showMenuIconButton={false}>
             <div style={styles.button}>
-              <Link to="/"><FlatButton><div style={styles.white}>Home</div></FlatButton></Link>
+              <Link to="./"><FlatButton><div style={styles.white}>Home</div></FlatButton></Link>
             </div>
             {/* <div style={styles.button}>
               <Link to="/Patients"><FlatButton><div style={styles.white}>Patients</div></FlatButton></Link>
@@ -53,19 +53,20 @@ function App() {
               renders the first one that matches the current URL. */}
           <div style={styles.center}>
             <Switch>
-              <Route path="/Visits">
-                <Visits />
-              </Route>
-              <Route path="/AddNewVisit">
-                <AddNewVisit />
-              </Route>
-              <Route path="/AddInterview">
-                <AddInterview />
-              </Route>
-              <Route path="/">
-                <Home />
-              </Route>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/Visits" component={Visits} />
+              <Route exact path="/AddNewVisit" component={AddNewVisit} />
+              <Route exact path="/AddInterview" component={AddInterview} />
             </Switch>
+            {/* <Route path="/AddNewVisit">
+              <AddNewVisit />
+            </Route>
+            <Route path="/AddInterview">
+              <AddInterview />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route> */}
           </div>
         </div>
       </Router>
@@ -79,7 +80,7 @@ function Visits() {
       <h2>Visits</h2>
       <Grid container direction="row" justify="center" alignItems="center" spacing={3}>
         <Grid item xs>
-          <Link to="/AddNewVisit"><Button variant="contained" color="primary"><h2>Add New Visit</h2></Button></Link>
+          <Link to="./AddNewVisit"><Button variant="contained" color="primary"><h2>Add New Visit</h2></Button></Link>
         </Grid>
         <Grid item xs>
           <Button variant="contained" disabled><h2>View / Edit Visits</h2></Button>
@@ -94,7 +95,7 @@ function AddNewVisit() {
       <h2>Visit</h2>
       <Grid container direction="row" justify="center" alignItems="center" spacing={3}>
         <Grid item xs>
-          <Link to="/AddInterview"><Button variant="contained" color="primary"><h2>Add New Interview</h2></Button></Link>
+          <Link to="./AddInterview"><Button variant="contained" color="primary"><h2>Add New Interview</h2></Button></Link>
         </Grid>
       </Grid>
     </div>

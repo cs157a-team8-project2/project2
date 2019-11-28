@@ -132,8 +132,7 @@ export class UserForm extends Component {
         this.setState({ [name]: event.target.checked });
     }
 
-    formSubmission = (e) => {
-        e.preventDefault()
+    formSubmission = () => {
         //this will submit the data for the php server in the form of the "this.state" json and will be parsed by the php
         console.log(this.state)
         // if it completes the query
@@ -458,6 +457,7 @@ export class UserForm extends Component {
                             prevStep = {this.prevStep}
                             handleChange = {this.handleChange}
                             handleChecked = {this.handleChecked}
+                            formSubmission = {this.formSubmission}
                             values = {values}
                         />
                         {toVisit}
