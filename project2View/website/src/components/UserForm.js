@@ -5,6 +5,8 @@ import SoundToleranceForm from './SoundToleranceForm';
 import HLForm from './HLForm';
 import RankingForm from './RankingForm';
 import { Button, Grid, TextField } from '@material-ui/core';
+import axios from 'axios';
+
 
 
 export class UserForm extends Component {
@@ -135,6 +137,24 @@ export class UserForm extends Component {
     formSubmission = () => {
         //this will submit the data for the php server in the form of the "this.state" json and will be parsed by the php
         console.log(this.state)
+		return fetch('https://localhost/api/contact/test.php', {
+            method: 'POST',
+            headers: {
+              Accept: 'application/json',
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(this.state),
+            })
+            .then((response) => response.json())
+            .then((responseJson) => {
+                // probably will do data check here if needed
+                console.log(responseJson)
+                return responseJson;
+            })
+            .catch((error) => {
+                console.error(error);
+            }
+        );
         // if it completes the query
             // this.nextStep()
         // else // go to error screen
@@ -143,6 +163,7 @@ export class UserForm extends Component {
             //     step: step + 2
             // });
     }
+	
 
     render() {
         const { step } = this.state;
