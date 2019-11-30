@@ -102,7 +102,7 @@ export default class TinnitusForm extends Component {
                 <FormControlLabel
                   control={
                     <Checkbox 
-                      checked={values.tin_activities_concentration} 
+                      checked={values.tin_activities_concentration === 'Y'} 
                       onChange={handleChecked('tin_activities_concentration')} 
                       value="Concentration" 
                     />
@@ -112,7 +112,7 @@ export default class TinnitusForm extends Component {
                 <FormControlLabel
                   control={
                     <Checkbox 
-                      checked={values.tin_activities_sleep} 
+                      checked={values.tin_activities_sleep === 'Y'} 
                       onChange={handleChecked('tin_activities_sleep')} 
                       value="Sleep" 
                     />
@@ -122,7 +122,7 @@ export default class TinnitusForm extends Component {
                 <FormControlLabel
                   control={
                     <Checkbox 
-                      checked={values.tin_activities_qra} 
+                      checked={values.tin_activities_qra === 'Y'} 
                       onChange={handleChecked('tin_activities_qra')} 
                       value="QRA" 
                     />
@@ -132,7 +132,7 @@ export default class TinnitusForm extends Component {
                 <FormControlLabel
                   control={
                     <Checkbox 
-                      checked={values.tin_activities_work} 
+                      checked={values.tin_activities_work === 'Y'} 
                       onChange={handleChecked('tin_activities_work')} 
                       value="Work" 
                     />
@@ -142,7 +142,7 @@ export default class TinnitusForm extends Component {
                 <FormControlLabel
                   control={
                     <Checkbox 
-                      checked={values.tin_activities_restaurants} 
+                      checked={values.tin_activities_restaurants === 'Y'} 
                       onChange={handleChecked('tin_activities_restaurants')} 
                       value="Restaurants" 
                     />
@@ -152,7 +152,7 @@ export default class TinnitusForm extends Component {
                 <FormControlLabel
                   control={
                     <Checkbox 
-                      checked={values.tin_activities_sports} 
+                      checked={values.tin_activities_sports === 'Y'} 
                       onChange={handleChecked('tin_activities_sports')} 
                       value="Sports" 
                     />
@@ -162,7 +162,7 @@ export default class TinnitusForm extends Component {
                 <FormControlLabel
                   control={
                     <Checkbox 
-                      checked={values.tin_activities_social} 
+                      checked={values.tin_activities_social === 'Y'} 
                       onChange={handleChecked('tin_activities_social')} 
                       value="Social" 
                     />
@@ -172,7 +172,7 @@ export default class TinnitusForm extends Component {
                 <FormControlLabel
                   control={
                     <Checkbox 
-                      checked={values.tin_activities_other} 
+                      checked={values.tin_activities_other === 'Y'} 
                       onChange={handleChecked('tin_activities_other')} 
                       value="Other" 
                     />

@@ -75,7 +75,7 @@ export default class SoundToleranceForm extends Component {
                       <FormControlLabel
                         control={
                           <Checkbox 
-                            checked={values.st_activities_concerts} 
+                            checked={values.st_activities_concerts === 'Y'} 
                             onChange={handleChecked('st_activities_concerts')} 
                             value="Concerts" 
                           />
@@ -85,7 +85,7 @@ export default class SoundToleranceForm extends Component {
                       <FormControlLabel
                         control={
                           <Checkbox 
-                            checked={values.st_activities_shopping} 
+                            checked={values.st_activities_shopping === 'Y'} 
                             onChange={handleChecked('st_activities_shopping')} 
                             value="Shopping" 
                           />
@@ -95,7 +95,7 @@ export default class SoundToleranceForm extends Component {
                       <FormControlLabel
                         control={
                           <Checkbox 
-                            checked={values.st_activities_movies} 
+                            checked={values.st_activities_movies === 'Y'} 
                             onChange={handleChecked('st_activities_movies')} 
                             value="Movies" 
                           />
@@ -105,7 +105,7 @@ export default class SoundToleranceForm extends Component {
                       <FormControlLabel
                         control={
                           <Checkbox 
-                            checked={values.st_activities_work} 
+                            checked={values.st_activities_work === 'Y'} 
                             onChange={handleChecked('st_activities_work')} 
                             value="Work" 
                           />
@@ -115,7 +115,7 @@ export default class SoundToleranceForm extends Component {
                       <FormControlLabel
                         control={
                           <Checkbox 
-                            checked={values.st_activities_restaurants} 
+                            checked={values.st_activities_restaurants === 'Y'} 
                             onChange={handleChecked('st_activities_restaurants')} 
                             value="Restaurants" 
                           />
@@ -125,7 +125,7 @@ export default class SoundToleranceForm extends Component {
                       <FormControlLabel
                         control={
                           <Checkbox 
-                            checked={values.st_activities_driving} 
+                            checked={values.st_activities_driving === 'Y'} 
                             onChange={handleChecked('st_activities_driving')} 
                             value="Driving" 
                           />
@@ -135,7 +135,7 @@ export default class SoundToleranceForm extends Component {
                       <FormControlLabel
                         control={
                           <Checkbox 
-                            checked={values.st_activities_sports} 
+                            checked={values.st_activities_sports === 'Y'} 
                             onChange={handleChecked('st_activities_sports')} 
                             value="Sports" 
                           />
@@ -145,7 +145,7 @@ export default class SoundToleranceForm extends Component {
                       <FormControlLabel
                         control={
                           <Checkbox 
-                            checked={values.st_activities_church} 
+                            checked={values.st_activities_church === 'Y'} 
                             onChange={handleChecked('st_activities_church')} 
                             value="Church" 
                           />
@@ -155,7 +155,7 @@ export default class SoundToleranceForm extends Component {
                       <FormControlLabel
                         control={
                           <Checkbox 
-                            checked={values.st_activities_housekeeping} 
+                            checked={values.st_activities_housekeeping === 'Y'} 
                             onChange={handleChecked('st_activities_housekeeping')} 
                             value="Housekeeping" 
                           />
@@ -165,7 +165,7 @@ export default class SoundToleranceForm extends Component {
                       <FormControlLabel
                         control={
                           <Checkbox 
-                            checked={values.st_activities_childcare} 
+                            checked={values.st_activities_childcare === 'Y'} 
                             onChange={handleChecked('st_activities_childcare')} 
                             value="Childcare" 
                           />
@@ -175,7 +175,7 @@ export default class SoundToleranceForm extends Component {
                       <FormControlLabel
                         control={
                           <Checkbox 
-                            checked={values.st_activities_social} 
+                            checked={values.st_activities_social === 'Y'} 
                             onChange={handleChecked('st_activities_social')} 
                             value="Social" 
                           />
@@ -185,7 +185,7 @@ export default class SoundToleranceForm extends Component {
                       <FormControlLabel
                         control={
                           <Checkbox 
-                            checked={values.st_activities_other} 
+                            checked={values.st_activities_other === 'Y'} 
                             onChange={handleChecked('st_activities_other')} 
                             value="Other" 
                           />

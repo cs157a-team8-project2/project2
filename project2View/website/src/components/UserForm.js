@@ -12,16 +12,16 @@ import { Button, Grid, TextField } from '@material-ui/core';
 export class UserForm extends Component {
     state = {
         step: 0,
-        visit_ID: 'temp1',
-        date: 'temp2',
-        visit_number: 'temp3',
 
+        visit_ID: '',
+        date: '',
+        visit_number: '',
 
-        thc: 'temp4',
+        thc: '',
         ssn: '',
         dob: '',
-        first_name: 'temp5',
-        last_name: 'temp6',
+        first_name: '',
+        last_name: '',
         phone: '',
         email: '',
         insurance: '',
@@ -35,24 +35,24 @@ export class UserForm extends Component {
         tin_when: '',
         tin_fluctuations: '',
         tin_desc_of_t_sound: '',
-        tin_activities_concentration: '',
-        tin_activities_sleep: '',
-        tin_activities_qra: '',
-        tin_activities_work: '',
-        tin_activities_restaurants: '',
-        tin_activities_sports: '',
-        tin_activities_social: '',
-        tin_activities_other: '',
-        tin_severity: 0,
-        tin_annoyance: 0,
-        tin_effectonlife: 0,
+        tin_activities_concentration: 'N',
+        tin_activities_sleep: 'N',
+        tin_activities_qra: 'N',
+        tin_activities_work: 'N',
+        tin_activities_restaurants: 'N',
+        tin_activities_sports: 'N',
+        tin_activities_social: 'N',
+        tin_activities_other: 'N',
+        tin_severity: 1,
+        tin_annoyance: 1,
+        tin_effectonlife: 1,
         tin_comments: '',
         tin_bd: '',
         tin_bd_freq: '',
         tin_eff_of_sound: '',
         tin_eof_how_long: '',
         tin_ear_over: '',
-        tin_ear_over_perc: 0,
+        tin_ear_over_perc: 1,
         tin_ear_over_inquiet: '',
         tin_other_t_treat: '',
         tin_why_t_prob: '',
@@ -61,28 +61,28 @@ export class UserForm extends Component {
         st_oversensitivity: '',
         st_phys_dis: '',
         st_desc_of_troub_sounds: '',
-        st_activities_concerts: '',
-        st_activities_shopping: '',
-        st_activities_movies: '',
-        st_activities_work: '',
-        st_activities_restaurants: '',
-        st_activities_driving: '',
-        st_activities_sports: '',
-        st_activities_church: '',
-        st_activities_housekeeping: '',
-        st_activities_childcare: '',
-        st_activities_social: '',
-        st_activities_other: '',
-        st_severity: 0,
-        st_annoyance: 0,
-        st_effectonlife: 0,
+        st_activities_concerts: 'N',
+        st_activities_shopping: 'N',
+        st_activities_movies: 'N',
+        st_activities_work: 'N',
+        st_activities_restaurants: 'N',
+        st_activities_driving: 'N',
+        st_activities_sports: 'N',
+        st_activities_church: 'N',
+        st_activities_housekeeping: 'N',
+        st_activities_childcare: 'N',
+        st_activities_social: 'N',
+        st_activities_other: 'N',
+        st_severity: 1,
+        st_annoyance: 1,
+        st_effectonlife: 1,
         st_comments: '',
         st_bd: '',
         st_bd_freq: '',
         st_eff_of_sound: '',
         st_eof_how_long: '',
         st_ear_over: '',
-        st_ear_over_perc: 0,
+        st_ear_over_perc: 1,
         st_ear_over_inquiet: '',
         st_other_st_treat: '',
         st_why_st_prob: '',
@@ -96,17 +96,41 @@ export class UserForm extends Component {
         hl_rec: '',
 
         //Rank
-        rank_tin: 0,
-        rank_st: 0,
-        rank_hearing: 0,
+        rank_tin: 1,
+        rank_st: 1,
+        rank_hearing: 1,
         ptn_decision: '',
         next_visit: '',
-        fui_tin_activities_changes: '',
-        fui_st_activities_changes: '',
+        fui_tin_activities_changes: 'N',
+        fui_st_activities_changes: 'N',
         fui_problem_in_general: '',
         fui_glad_started: '',
         fui_main_prob_disc: '',
         visit_visit_id: 0
+    }
+
+    componentDidMount() {
+        this.loadPatient()
+    }
+
+    loadPatient = () => {
+        // gets the patient data from the server by doing a fetch request to a php file
+        // TODO change the url to a new php file
+        return fetch('http://localhost:8080/api/contact/test.php')
+            .then((response) => response.json())
+            .then((responseJson) => {
+                console.log(responseJson)
+                if(responseJson) {
+                    //set the states for the patient info
+                } else {
+                    alert('Error: Page info failed to load')
+                }
+                return responseJson;
+            })
+            .catch((error) => {
+                console.error(error);
+            }
+        );
     }
 
     // Procceed to the next step
@@ -131,7 +155,12 @@ export class UserForm extends Component {
     }
 
     handleChecked = name => event => {
-        this.setState({ [name]: event.target.checked });
+        console.log(this.state[name])
+        if(this.state[name] === 'N') {
+            this.setState({ [name]: 'Y' });
+        } else {
+            this.setState({ [name]: 'N' });
+        }
     }
 
     formSubmission = () => {
@@ -149,19 +178,17 @@ export class UserForm extends Component {
             .then((responseJson) => {
                 // probably will do data check here if needed
                 console.log(responseJson)
+                if(responseJson) {
+                    this.nextStep()
+                } else {
+                    alert('Error: Database failed to store data')
+                }
                 return responseJson;
             })
             .catch((error) => {
                 console.error(error);
             }
-            );
-        // if it completes the query
-        // this.nextStep()
-        // else // go to error screen
-        // const { step } = this.state;
-        // this.setState({
-        //     step: step + 2
-        // });
+        );
     }
 
 
