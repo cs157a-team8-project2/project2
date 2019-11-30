@@ -6,11 +6,11 @@ header("Access-Control-Allow-Origin: *");
 $rest_json = file_get_contents("php://input");
 $_POST = json_decode($rest_json, true);
 
-echo json_encode("Hello");
+echo json_encode($_POST);
 
 //TI
-/*$tin_area = $_POST[''];['tin_area'];
-$tin_area_freq = $_POST[''];['tin_area_freq'];
+$tin_area = $_POST['tin_area'];
+$tin_area_freq = $_POST['tin_area_freq'];
 $tin_onset = $_POST['tin_onset'];
 $tin_when = $_POST['tin_when'];
 $tin_fluctuations = $_POST['tin_fluctuations'];
@@ -96,6 +96,6 @@ $sql = 'INSERT INTO visit values($visit_id,$visit_number,$date,$thc,$clinic_clin
 $s = oci_parse($conn, $sql);
 oci_execute($s);
 
-echo "<script>alert('message successfully sent');</script>";*/
+echo "<script>alert('message successfully sent');</script>";
 
 ?>

@@ -8,7 +8,7 @@ if (!$conn) {
 	exit;
 }
 else {
-	echo json_encode("Connected to Oracle");
+	//echo json_encode("Connected to Oracle");
 }
 
 ?>
