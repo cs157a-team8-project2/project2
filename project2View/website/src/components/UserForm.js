@@ -121,17 +121,17 @@ export class UserForm extends Component {
                 // console.log(responseJson)
                 //set the states for the patient info
                 this.setState({
-                    visit_ID:       responseJson['VISIT_ID'],
-                    date:           responseJson['Date'],
-                    visit_number:   responseJson['VISIT_NUMBER'],
-                    thc:            responseJson['THC'],
-                    ssn:            responseJson['SSN'],
-                    dob:            responseJson['DOB'],
-                    first_name:     responseJson['FIRST_NAME'], 
-                    last_name:      responseJson['LAST_NAME'], 
-                    phone:          responseJson['PHONE'], 
-                    email:          responseJson['EMAIL'], 
-                    insurance:      responseJson['INSURANCE']           
+                    visit_ID: responseJson['VISIT_ID'],
+                    date: responseJson['VISIT_DATE'],
+                    visit_number: responseJson['VISIT_NUMBER'],
+                    thc: responseJson['THC'],
+                    ssn: responseJson['SSN'],
+                    dob: responseJson['DOB'],
+                    first_name: responseJson['FIRST_NAME'],
+                    last_name: responseJson['LAST_NAME'],
+                    phone: responseJson['PHONE'],
+                    email: responseJson['EMAIL'],
+                    insurance: responseJson['INSURANCE']
                 })
                 return responseJson;
             })
