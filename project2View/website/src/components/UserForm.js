@@ -106,7 +106,6 @@ export class UserForm extends Component {
         fui_problem_in_general: '',
         fui_glad_started: '',
         fui_main_prob_disc: '',
-        visit_visit_id: 0
     }
 
     componentDidMount() {
@@ -119,23 +118,21 @@ export class UserForm extends Component {
         return fetch('http://localhost:8080/api/contact/getData.php')
             .then((response) => response.json())
             .then((responseJson) => {
-                console.log(responseJson)
-                if (responseJson) {
-                    //set the states for the patient info
-                    this.setState({ visit_ID:       responseJson['VISIT_ID']        })
-                    this.setState({ date:           responseJson['Date']            })
-                    this.setState({ visit_number:   responseJson['VISIT_NUMBER']    })
-                    this.setState({ thc:            responseJson['THC']             })
-                    this.setState({ ssn:            responseJson['SSN']             })
-                    this.setState({ dob:            responseJson['DOB']             })
-                    this.setState({ first_name:     responseJson['FIRST_NAME']      })
-                    this.setState({ last_name:      responseJson['LAST_NAME']       })
-                    this.setState({ phone:          responseJson['PHONE']           })
-                    this.setState({ email:          responseJson['EMAIL']           })
-                    this.setState({ insurance:      responseJson['INSURANCE']       })
-                } else {
-                    alert('Error: Page info failed to load')
-                }
+                // console.log(responseJson)
+                //set the states for the patient info
+                this.setState({
+                    visit_ID:       responseJson['VISIT_ID'],
+                    date:           responseJson['Date'],
+                    visit_number:   responseJson['VISIT_NUMBER'],
+                    thc:            responseJson['THC'],
+                    ssn:            responseJson['SSN'],
+                    dob:            responseJson['DOB'],
+                    first_name:     responseJson['FIRST_NAME'], 
+                    last_name:      responseJson['LAST_NAME'], 
+                    phone:          responseJson['PHONE'], 
+                    email:          responseJson['EMAIL'], 
+                    insurance:      responseJson['INSURANCE']           
+                })
                 return responseJson;
             })
             .catch((error) => {
@@ -373,7 +370,7 @@ export class UserForm extends Component {
             visit_visit_id,
         }
 
-        const topInfo = (
+        var topInfo = (
             <div>
                 <Grid container direction="row" spacing={3}>
                     <Grid item xs={4}>
@@ -381,7 +378,7 @@ export class UserForm extends Component {
                             disabled
                             label="Visit ID:"
                             onChange={this.handleChange('visit_ID')}
-                            defaultValue={this.state.visit_ID}
+                            value={this.state.visit_ID}
 
                         />
                     </Grid>
@@ -390,7 +387,7 @@ export class UserForm extends Component {
                             disabled
                             label="Date:"
                             onChange={this.handleChange('date')}
-                            defaultValue={this.state.date}
+                            value={this.state.date}
                         />
                     </Grid>
                     <Grid item xs={3}>
@@ -398,7 +395,7 @@ export class UserForm extends Component {
                             disabled
                             label="Patient THC#:"
                             onChange={this.handleChange('patient_THC_number')}
-                            defaultValue={this.state.first_name + ' ' + this.state.last_name}
+                            value={this.state.first_name + ' ' + this.state.last_name}
                         />
                     </Grid>
                     <Grid item xs={3}>
@@ -406,7 +403,7 @@ export class UserForm extends Component {
                             disabled
                             label="THC#:"
                             onChange={this.handleChange('THC_number')}
-                            defaultValue={this.state.thc}
+                            value={this.state.thc}
                         />
                     </Grid>
                     <Grid item xs={3}>
@@ -414,7 +411,7 @@ export class UserForm extends Component {
                             disabled
                             label="Visit no."
                             onChange={this.handleChange('visit_number')}
-                            defaultValue={this.state.visit_number}
+                            value={this.state.visit_number}
                         />
                     </Grid>
                 </Grid>
