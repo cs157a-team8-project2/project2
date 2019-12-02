@@ -92,9 +92,14 @@ $sqlinsert = "INSERT INTO interview values ($tin_area,$tin_area_freq,$tin_onset,
 $d = oci_parse($conn, $sqlinsert);
 oci_execute($d);
 
-$sql = 'INSERT INTO visit values($visit_id,$visit_number,$date,$thc,$clinic_clinic_number,$interview_id)';
+
+$sql = 'INSERT INTO visit values($visit_id,$visit_number,$date,$thc,$clinic_clinic_number,$interview_id);';
 $s = oci_parse($conn, $sql);
 oci_execute($s);
+
+$sqlcommit = 'commit;';
+$c = oci_parse($conn, $sqlcommit);
+oci_execute($c);
 
 echo "<script>alert('message successfully sent');</script>";
 
