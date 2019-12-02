@@ -120,22 +120,24 @@ export class UserForm extends Component {
             .then((response) => response.json())
             .then((responseJson) => {
                 console.log(responseJson)
-                if (responseJson) {
-                    //set the states for the patient info
-                    this.setState({ visit_ID:       responseJson['VISIT_ID']        })
-                    this.setState({ date:           responseJson['Date']            })
-                    this.setState({ visit_number:   responseJson['VISIT_NUMBER']    })
-                    this.setState({ thc:            responseJson['THC']             })
-                    this.setState({ ssn:            responseJson['SSN']             })
-                    this.setState({ dob:            responseJson['DOB']             })
-                    this.setState({ first_name:     responseJson['FIRST_NAME']      })
-                    this.setState({ last_name:      responseJson['LAST_NAME']       })
-                    this.setState({ phone:          responseJson['PHONE']           })
-                    this.setState({ email:          responseJson['EMAIL']           })
-                    this.setState({ insurance:      responseJson['INSURANCE']       })
-                } else {
-                    alert('Error: Page info failed to load')
-                }
+
+                //set the states for the patient info
+                this.setState({ visit_ID: responseJson['VISIT_ID'] });
+                console.log(responseJson['VISIT_ID']);
+                console.log(this.state.visit_ID);
+                this.setState({ date: responseJson['Date'] });
+                this.setState({ visit_number: responseJson['VISIT_NUMBER'] });
+                this.setState({ thc: responseJson['THC'] });
+                this.setState({ ssn: responseJson['SSN'] });
+                this.setState({ dob: responseJson['DOB'] });
+                this.setState({ first_name: responseJson['FIRST_NAME'] });
+                this.setState({ last_name: responseJson['LAST_NAME'] });
+                this.setState({ phone: responseJson['PHONE'] });
+                this.setState({ email: responseJson['EMAIL'] });
+                this.setState({ insurance: responseJson['INSURANCE'] });
+
+
+
                 return responseJson;
             })
             .catch((error) => {
