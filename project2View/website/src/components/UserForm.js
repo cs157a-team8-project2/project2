@@ -383,7 +383,7 @@ export class UserForm extends Component {
                             disabled
                             label="Visit ID:"
                             onChange={this.handleChange('visit_ID')}
-                            defaultValue={values.visit_ID}
+                            defaultValue={this.state.visit_ID}
 
                         />
                     </Grid>
@@ -392,7 +392,7 @@ export class UserForm extends Component {
                             disabled
                             label="Date:"
                             onChange={this.handleChange('date')}
-                            defaultValue={values.date}
+                            defaultValue={this.state.date}
                         />
                     </Grid>
                     <Grid item xs={3}>
@@ -400,7 +400,7 @@ export class UserForm extends Component {
                             disabled
                             label="Patient THC#:"
                             onChange={this.handleChange('patient_THC_number')}
-                            defaultValue={values.first_name + ' ' + values.last_name}
+                            defaultValue={this.state.first_name + ' ' + this.state.last_name}
                         />
                     </Grid>
                     <Grid item xs={3}>
@@ -408,7 +408,7 @@ export class UserForm extends Component {
                             disabled
                             label="THC#:"
                             onChange={this.handleChange('THC_number')}
-                            defaultValue={values.thc}
+                            defaultValue={this.state.thc}
                         />
                     </Grid>
                     <Grid item xs={3}>
@@ -416,7 +416,7 @@ export class UserForm extends Component {
                             disabled
                             label="Visit no."
                             onChange={this.handleChange('visit_number')}
-                            defaultValue={values.visit_number}
+                            defaultValue={this.state.visit_number}
                         />
                     </Grid>
                 </Grid>
