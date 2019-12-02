@@ -116,11 +116,11 @@ export class UserForm extends Component {
     loadPatient = () => {
         // gets the patient data from the server by doing a fetch request to a php file
         // TODO change the url to a new php file
-        return fetch('http://localhost:8080/api/contact/test.php')
+        return fetch('http://localhost:8080/api/contact/getData.php')
             .then((response) => response.json())
             .then((responseJson) => {
                 console.log(responseJson)
-                if(responseJson) {
+                if (responseJson) {
                     //set the states for the patient info
                 } else {
                     alert('Error: Page info failed to load')
@@ -130,7 +130,7 @@ export class UserForm extends Component {
             .catch((error) => {
                 console.error(error);
             }
-        );
+            );
     }
 
     // Procceed to the next step
@@ -156,7 +156,7 @@ export class UserForm extends Component {
 
     handleChecked = name => event => {
         console.log(this.state[name])
-        if(this.state[name] === 'N') {
+        if (this.state[name] === 'N') {
             this.setState({ [name]: 'Y' });
         } else {
             this.setState({ [name]: 'N' });
@@ -178,7 +178,7 @@ export class UserForm extends Component {
             .then((responseJson) => {
                 // probably will do data check here if needed
                 console.log(responseJson)
-                if(responseJson) {
+                if (responseJson) {
                     this.nextStep()
                 } else {
                     alert('Error: Database failed to store data')
@@ -188,7 +188,7 @@ export class UserForm extends Component {
             .catch((error) => {
                 console.error(error);
             }
-        );
+            );
     }
 
 

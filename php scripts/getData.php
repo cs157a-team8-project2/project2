@@ -3,12 +3,12 @@ include 'connectdb.php';
 
 header("Access-Control-Allow-Origin: *");
 
-$result = $conn->query(
-    "SELECT *" .
-    "FROM Patient, Visit;"
-);
 
-$tuple = $result->fetchrow();
+$p = oci_parse($conn, 'SELECT * FROM Patient, Visit');
+$result = oci_execute($p);
+
+$tuple = oci_fetch_array($result);
+
 
 echo json_encode($tuple);
 ?>
