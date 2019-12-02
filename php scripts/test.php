@@ -86,26 +86,22 @@ $fui_st_activities_changes = $_POST['fui_st_activities_changes'];
 $fui_problem_in_general = $_POST['fui_problem_in_general'];
 $fui_glad_started = $_POST['fui_glad_started'];
 $fui_main_prob_disc = $_POST['fui_main_prob_disc'];
-$visit_visit_id = $_POST['visit_visit_id'];
 
-$sqlinsert = "INSERT INTO interview values ($tin_area,$tin_area_freq,$tin_onset,$tin_when,$tin_fluctuations,$tin_desc_of_t_sound,$tin_activities_concentration,$tin_activities_sleep,$tin_activities_qra,$tin_activities_work,$tin_activities_restaurants,$tin_activities_sports,$tin_activities_social,$tin_activities_other,$tin_severity,$tin_annoyance,$tin_effectonlife,$tin_comments,$tin_bd,$tin_bd_freq,$tin_eff_of_sound,$tin_eof_how_long,$tin_ear_over,$tin_ear_over_perc,$tin_ear_over_inquiet,$tin_other_t_treat,$tin_why_t_prob,$st_oversensitivity,$st_phys_dis,$st_desc_of_troub_sounds,$st_activities_concerts,$st_activities_shopping,$st_activities_movies,$st_activities_work,$st_activities_restaurants,$st_activities_driving,$st_activities_sports,$st_activities_church,$st_activities_housekeeping,$st_activities_childcare,$st_activities_social,$st_activities_other,$st_severity,$st_annoyance,$st_effectonlife,$st_comments,$st_bd,$st_bd_freq,$st_eff_of_sound,$st_eof_how_long,$st_ear_over,$st_ear_over_perc,$st_ear_over_inquiet,$st_other_st_treat,$st_why_st_prob,$hl_hearing_prob,$hl_hearing_aid,$hl_hearing_aid_type,$hl_ever_rec,$hl_category,$hl_rec,$rank_tin,$rank_st,$rank_hearing,$ptn_decision,$next_visit,$fui_tin_activities_changes,$fui_st_activities_changes,$fui_problem_in_general,$fui_glad_started,$fui_main_prob_disc)";
+
+$sqlinsert = "INSERT INTO interview values ("701", $tin_area,$tin_area_freq,$tin_onset,$tin_when,$tin_fluctuations,$tin_desc_of_t_sound,$tin_activities_concentration,$tin_activities_sleep,$tin_activities_qra,$tin_activities_work,$tin_activities_restaurants,$tin_activities_sports,$tin_activities_social,$tin_activities_other,$tin_severity,$tin_annoyance,$tin_effectonlife,$tin_comments,$tin_bd,$tin_bd_freq,$tin_eff_of_sound,$tin_eof_how_long,$tin_ear_over,$tin_ear_over_perc,$tin_ear_over_inquiet,$tin_other_t_treat,$tin_why_t_prob,$st_oversensitivity,$st_phys_dis,$st_desc_of_troub_sounds,$st_activities_concerts,$st_activities_shopping,$st_activities_movies,$st_activities_work,$st_activities_restaurants,$st_activities_driving,$st_activities_sports,$st_activities_church,$st_activities_housekeeping,$st_activities_childcare,$st_activities_social,$st_activities_other,$st_severity,$st_annoyance,$st_effectonlife,$st_comments,$st_bd,$st_bd_freq,$st_eff_of_sound,$st_eof_how_long,$st_ear_over,$st_ear_over_perc,$st_ear_over_inquiet,$st_other_st_treat,$st_why_st_prob,$hl_hearing_prob,$hl_hearing_aid,$hl_hearing_aid_type,$hl_ever_rec,$hl_category,$hl_rec,$rank_tin,$rank_st,$rank_hearing,$ptn_decision,$next_visit,$fui_tin_activities_changes,$fui_st_activities_changes,$fui_problem_in_general,$fui_glad_started,$fui_main_prob_disc)";
 $d = oci_parse($conn, $sqlinsert);
 oci_execute($d);
 
 oci_free_statement($d);
 
 
-$sql = 'INSERT INTO visit values($visit_id,$visit_number,$date,$thc,$clinic_clinic_number,$interview_id);';
+$sql = "INSERT INTO visit values ("8090","2","28-11-19","500-12","100","701")";
 $s = oci_parse($conn, $sql);
 oci_execute($s);
 
 oci_free_statement($s);
 
-$sqlcommit = 'commit;';
-$c = oci_parse($conn, $sqlcommit);
-oci_execute($c);
-
-oci_free_statement($c);
+oci_commit($conn);
 
 oci_close($conn);
 
